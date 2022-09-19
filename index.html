@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <main>
+        <!-- Play image -->
+        <div class="play-img" id="play-img">
+            <img src="img/poster.png" alt="play image">
+        </div>
+
+        <!-- The video -->
+        <video id="video" controls>
+            <source src="video/gone.mp4">
+        </video>
+        <!-- Controls -->
+        <div class="controls">
+            <div class="play-pause" id="play-pause">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="stop" id="stop">
+                <i class="fa-sharp fa-solid fa-stop"></i>
+            </div>
+            <input type="range" id="progress-bar" class="progress-bar" min="0" max="100" step="1" value="0">
+            <span class="time-elapsed" id="time-elapsed">00:00</span>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
